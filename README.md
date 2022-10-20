@@ -1,5 +1,3 @@
-# engeto_python
-
 Textový analyzátor - program, který se bude umět prokousat libovolně dlouhým textem a zjistit o něm různé informace.
 
 Ještě než začneš, budeš pracovat se zadanými předpřipravenými texty. Kód se ti pak bude lépe kontrolovat. Tyto texty jsou dostupné zde.
