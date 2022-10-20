@@ -1,6 +1,6 @@
 #/usr/bin/python3
 
-import textin as txt
+import task_template as txt
 
 """
 project_1.py: první projekt do Engeto Online Python Akademie
@@ -15,30 +15,37 @@ bob  |     123     |
 """
 
 valid_users = { "bob":"123", "ann":"pass123", "mike":"password123", "liz":"pass123" }
-login_req=0
+login_req=1
 debug=0
 
 if (login_req):
-    user = input("login:")
+    user = input("username:")
     #print(user)
     pwd = input("password:")
     #print(user)
     if user in valid_users:
-        print("user OK")
+        #print("user OK")
         #print(user, valid_users[user])
         if (pwd == valid_users.get(user)):
-            print("password OK")
+            pass
+            #print("password OK")
         else: 
-            print("invalid password")
+            print("invalid password, terminating the program..")
+            quit()
         print(valid_users.get(user))
     else:
-        print("user not OK")
+        print("unregistered user, terminating the program..")
+        quit()
+print("-"*40)
+print("Welcome to the app,", user)
+print("We have 3 texts to be analyzed.")
+print("-"*40)
 
     #vypsat prvni text
     #print(txt.TEXTS[0])
 
-chosen_text = input("Enter a number btw. 1 and 3 to select: 1")
-chosen_text = int(chosen_text)-1
+chosen_text = input("Enter a number btw. 1 and 3 to select: ")
+chosen_text = int(int(chosen_text)-1)
 
 #sentence = "This is a test"
 words_list = txt.TEXTS[chosen_text].split()
