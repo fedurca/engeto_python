@@ -21,7 +21,7 @@ def vykresli_hru():
         i+=1
     print("")
         
-vykresli_hru()
+#vykresli_hru()
 #herni_pole[1] = "X"
 vykresli_hru()
 """
@@ -40,7 +40,7 @@ while (nemame_viteze):
     else:
         print("neplatný tah - pozice obsazena")
         continue
-    print("pruchod cyklem")
+    #print("pruchod cyklem")
     vykresli_hru()
 
     volne_pole = True
