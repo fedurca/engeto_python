@@ -1,5 +1,6 @@
 #!usr/bin/python3
 import task_template as txt
+
 """
 project_1.py: první projekt do Engeto Online Python Akademie
 author: Ludek Fedurca
@@ -10,9 +11,9 @@ valid_users = {"bob": "123",
                "mike": "password123",
                "liz": "pass123"}
 login_req = 1
-debug = 0
+DEBUG = 0
 
-if (login_req):
+if(login_req):
     user = input("username:")
     pwd = input("password:")
     if user in valid_users:
@@ -20,11 +21,11 @@ if (login_req):
             pass
         else:
             print("invalid password, terminating the program..")
-            quit()
+            sys.exit()
         print(valid_users.get(user))
     else:
         print("unregistered user, terminating the program..")
-        quit()
+        sys.exit()
 print("-"*40)
 print("Welcome to the app,", user)
 print("We have 3 texts to be analyzed.")
@@ -43,11 +44,11 @@ stats = {"words_count": len(words_list),
          "words_sum_of_numbers": 0,
          "words_max_len": 0}
 
-aa = 0
+AA = 0
 for aaa in words_list:
-    words_list[aa] = words_list[aa].replace(",", "")
-    words_list[aa] = words_list[aa].replace(".", "")
-    aa += 1
+    words_list[AA] = words_list[AA].replace(",", "")
+    words_list[AA] = words_list[AA].replace(".", "")
+    AA += 1
 
 for i in words_list:
     if (i.istitle()):
@@ -77,12 +78,12 @@ lenghts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for i in words_list:
     lenghts[len(i)] += 1
 
-walk = 0
+WALK = 0
 
 for i in range(1, int(stats["words_max_len"])+1):
     print(f'{i:>3}|{"*"*lenghts[i]:<14}|{lenghts[i]:<0}')
-    walk += 1
-    if (debug != 0):
+    WALK += 1
+    if (DEBUG != 0):
         for j in words_list:
-            if (len(j) == walk):
+            if (len(j) == WALK):
                 print("SOUCASTI JE:", j)
