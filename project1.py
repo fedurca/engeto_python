@@ -3,7 +3,6 @@ import task_template as txt
 """
 project_1.py: první projekt do Engeto Online Python Akademie
 author: Ludek Fedurca
-email: fedurca@devnull.com
 discord: fedurca#6739
 """
 valid_users = { "bob":"123", "ann":"pass123", "mike":"password123", "liz":"pass123" }
