@@ -4,6 +4,7 @@ import task_template as txt
 """
 project_1.py: první projekt do Engeto Online Python Akademie
 author: Ludek Fedurca
+email: fedurca@gmail.com
 discord: fedurca#6739
 """
 valid_users = {"bob": "123",

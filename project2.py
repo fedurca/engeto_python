@@ -3,6 +3,7 @@ import random
 """
 project2.py: druhý projekt do Engeto Online Python Akademie (tic tac toe)
 author: Ludek Fedurca
+email: fedurca@gmail.com
 discord: fedurca#6739
 """
 
