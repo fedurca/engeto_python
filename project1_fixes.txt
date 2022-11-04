@@ -1,0 +1,21 @@
+Přihlašování: je sice funkční, ale zbytečně složité. Stačilo by ověřit, jestli valid_users.get(user) == pwd. 
+
+Výběr textů k analýze: chybí podmínka, pokud uživatel zadá jiné číslo než 1 - 3. 
+
+řádek 15 a 16: nadbytečné proměnné. Vhodně zapsaným kódem je možné je zcela vynechat. 
+
+řádek 37: nadbytečná funkce ¨int¨. 
+
+řádek 49: na první pohled není vůbec zřejmé, na co je proměnná AA -> vhodnější jméno. 
+Navíc počet slov už řešíš na řádku 41. 
+
+řádek 51, 52: Co když bude za slovem "?" nebo jiný znak? Navíc je na to vhodná zabudovaná funkce. 
+
+řádek 65: závorky navíc. řádek 74-76: to je zřejmě hlavička finlálního grafu. Zapiš ji v kódu někam blízko té tabulky, tzn. před for cyklus na řádku 85. 
+
+řádek 78: proměnná lenghts jako list je dost nevhodná. Co když bude slov více, než kolik sis tam nachystal nul? Doporučuji použít prázdný slovník, do kterého můžeš přidávat ke klíčům hodnoty jako informace o jejich počtu. 
+
+řádek 83: vůbec nevím, k čemu je dobrá proměnná WALK, ani podle jejího jména nedává žádný smysl. 
+
+řádek 86: pokud zvolíš k anlýze TEXT 2 nebo 3, rozhodí se ti formátování grafu. Zkus to ošetřit.
+
