@@ -12,26 +12,30 @@ valid_users = {"bob": "123",
                "ann": "pass123",
                "mike": "password123",
                "liz": "pass123"}
-login_req = 1
+login_req = 0
 DEBUG = 0
 
 if(login_req):
     user = input("username:")
     pwd = input("password:")
     if (valid_users.get(user) == pwd):
+        print("-"*40)
+        print("Welcome to the app,", user)
+        print("We have 3 texts to be analyzed.")
+        print("-"*40)
         pass
     else:
         print("invalid credentials, terminating the program..")
         sys.exit()
-print("-"*40)
-print("Welcome to the app,", user)
-print("We have 3 texts to be analyzed.")
-print("-"*40)
+
 
 chosen_text = 0
 while not int(chosen_text) in range(1,3):
     chosen_text = input("Enter a number btw. 1 and 3 to select:")
 chosen_text = int(chosen_text)
+
+chosen_text = 0
+
 
 words_list = txt.TEXTS[chosen_text].split()
 
